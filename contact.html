@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111313">
+  <meta name="description" content="تواصل مع إيلان هاتفيًا أو عبر واتساب، وأرسل استفسارك مباشرة.">
+  <title>تواصل معنا | إيلان</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="إيلان - الصفحة الرئيسية">
+      <span class="brand-mark"><span class="brand-letter">E</span><svg class="brand-crown" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5 7.5 12 12 4.5l4.5 7L21 7.5 19 18H5L3 7.5Z"/></svg></span><span><b>إيلان</b><small>عالم السيارات الفاخرة</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="فتح القائمة"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الكل</a>
+      <a href="collection.html">المجموعة</a>
+      <a href="experience.html">تجربتنا</a>
+      <a href="about.html">عن إيلان</a>
+      <a class="nav-cta" href="contact.html" aria-current="page">تواصل معنا <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-hero section-wrap">
+      <div class="contact-heading">
+        <p class="eyebrow"><span></span> نحن هنا لمساعدتك</p>
+        <h1>خلّينا نبدأ<br><em>الحديث.</em></h1>
+        <p>اسأل عن سيارة، اطلب تجربة قيادة، أو اكتب لنا ما تحتاجه. اختر الطريقة الأنسب لك.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-options">
+          <a class="contact-option" href="tel:+201095295675">
+            <span class="contact-option-icon" aria-hidden="true">☎</span>
+            <span><small>تواصل هاتفيًا</small><strong dir="ltr">010 9529 5675</strong></span>
+            <span class="contact-option-arrow" aria-hidden="true">←</span>
+          </a>
+          <p class="contact-note">أو اكتب رسالتك، وسنفتح لك واتساب برسالة جاهزة للإرسال.</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-heading">
+            <span>01 — 02</span>
+            <h2>اكتب لنا</h2>
+          </div>
+          <label for="contact-name">اسمك <small>اختياري</small></label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="الاسم">
+          <label for="contact-phone">رقم هاتفك <small>اختياري</small></label>
+          <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="010 0000 0000" dir="ltr">
+          <label for="contact-message">ما الذي تود الاستفسار عنه؟</label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+          <button class="button button-gold contact-submit" type="submit">تابع إلى واتساب <span>↗</span></button>
+          <p class="form-hint" id="form-hint" aria-live="polite">سيتم فتح واتساب برسالتك؛ راجعها واضغط «إرسال» داخل التطبيق.</p>
+        </form>
+      </div>
+      <div class="contact-watermark" aria-hidden="true">E</div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark"><span class="brand-letter">E</span><svg class="brand-crown" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5 7.5 12 12 4.5l4.5 7L21 7.5 19 18H5L3 7.5Z"/></svg></span><span><b>إيلان</b><small>عالم السيارات الفاخرة</small></span></a>
+    <p>© <span id="current-year">2025</span> إيلان. كل الحقوق محفوظة.</p>
+    <a href="../../index.html">العودة إلى معرض المشاريع ↗</a>
+  </footer>
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

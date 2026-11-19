@@ -1,0 +1,7 @@
+.home-page .hero {
+  isolation: isolate;
+}
+
+.home-page .intro {
+  max-width: 1160px;
+}

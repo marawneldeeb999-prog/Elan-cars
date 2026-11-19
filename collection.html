@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111313">
+  <meta name="description" content="اكتشف مجموعة إيلان من السيارات الفاخرة والرياضية.">
+  <title>المجموعة | إيلان</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body class="collection-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="إيلان - الصفحة الرئيسية">
+      <span class="brand-mark">E</span><span><b>إيلان</b><small>عالم السيارات الفاخرة</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-label="فتح القائمة"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الكل</a>
+      <a href="collection.html">المجموعة</a>
+      <a href="experience.html">تجربتنا</a>
+      <a href="about.html">عن إيلان</a>
+      <a class="nav-cta" href="contact.html">تواصل معنا <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="showroom-hero" aria-labelledby="showroom-title">
+      <div class="showroom-copy">
+        <p class="eyebrow"><span></span> اختيارات صُممت حولك</p>
+        <h1 id="showroom-title">السيارة المناسبة<br><em>تغيّر كل رحلة.</em></h1>
+        <p>من الأداء الرياضي إلى الراحة المطلقة، اكتشف مجموعة مختارة بعناية واعثر على السيارة التي تشبهك.</p>
+        <a class="button button-gold" href="#car-grid">استكشف المجموعة <span>↓</span></a>
+        <div class="showroom-count"><strong>18</strong><span>سيارة مختارة<br>بعناية إيلان</span></div>
+      </div>
+      <div class="showroom-visual" aria-hidden="true">
+        <div class="showroom-orbit showroom-orbit-outer"></div>
+        <div class="showroom-orbit showroom-orbit-inner"></div>
+        <div class="showroom-car-wrap">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1400&amp;q=88" alt="" fetchpriority="high">
+        </div>
+        <span class="showroom-label">PORSCHE 911 CARRERA <i></i> 01 / 18</span>
+      </div>
+      <a class="showroom-scroll" href="#car-grid" aria-label="انتقل إلى مجموعة السيارات"><span>اكتشف السيارات</span><b>↓</b></a>
+    </section>
+    <section class="collection section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> تشكيلة إيلان</p><h2>اختر <em>وجهتك</em></h2></div>
+        <p>ثمانية عشر موديلًا من علامات عالمية.<br>ابحث عن سيارتك واستكشف تجهيزاتها.</p>
+      </div>
+      <div class="collection-tools" role="search" aria-label="البحث في مجموعة السيارات">
+        <label class="search-field">
+          <span class="sr-only">ابحث بالاسم أو العلامة أو المواصفات</span>
+          <input id="car-search" type="search" placeholder="ابحث عن سيارة أو علامة..." autocomplete="off">
+          <span aria-hidden="true">⌕</span>
+        </label>
+        <label class="filter-field">
+          <span class="sr-only">تصفية حسب الفئة</span>
+          <select id="category-filter" aria-label="تصفية حسب الفئة"><option value="">كل الفئات</option></select>
+        </label>
+        <button class="favorites-filter" id="favorites-filter" type="button" aria-pressed="false">♡ المفضلة فقط</button>
+        <button class="clear-filters" id="clear-filters" type="button">مسح التصفية</button>
+      </div>
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+      <div class="car-grid" id="car-grid">
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="بورشه 911 كاريرا" loading="lazy" decoding="async"><span class="car-tag">كوبيه رياضية</span><button class="favorite" type="button" aria-label="إضافة بورشه 911 كاريرا للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">01 / 18</span><h2 class="car-title-heading">بورشه <bdi dir="ltr">911 Carrera</bdi></h2><div class="specs"><span>3.0L Flat-6<small>المحرك</small></span><span>4.1 ث<small>0–100 كم/س</small></span><span>388<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="مرسيدس بنز S 580" loading="lazy" decoding="async"><span class="car-tag">سيدان فاخرة</span><button class="favorite" type="button" aria-label="إضافة مرسيدس بنز S 580 للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">02 / 18</span><h2 class="car-title-heading">مرسيدس-بنز <bdi dir="ltr">S 580 4MATIC</bdi></h2><div class="specs"><span>4.0L V8<small>المحرك</small></span><span>4.4 ث<small>0–100 كم/س</small></span><span>496<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="بي إم دبليو 740i" loading="lazy" decoding="async"><span class="car-tag">راحة وتقنية</span><button class="favorite" type="button" aria-label="إضافة بي إم دبليو 740i للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">03 / 18</span><h2 class="car-title-heading">بي إم دبليو <bdi dir="ltr">740i</bdi></h2><div class="specs"><span>3.0L I6<small>المحرك</small></span><span>5.4 ث<small>0–100 كم/س</small></span><span>375<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="رينج روفر سبورت" loading="lazy" decoding="async"><span class="car-tag">SUV متعددة الاستخدام</span><button class="favorite" type="button" aria-label="إضافة رينج روفر سبورت للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">04 / 18</span><h2 class="car-title-heading">رينج روفر سبورت <bdi dir="ltr">P400</bdi></h2><div class="specs"><span>3.0L I6 MHEV<small>المحرك</small></span><span>5.5 ث<small>0–100 كم/س</small></span><span>395<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="مرسيدس-AMG G 63" loading="lazy" decoding="async"><span class="car-tag">أيقونة الطرق الوعرة</span><button class="favorite" type="button" aria-label="إضافة مرسيدس-AMG G 63 للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">05 / 18</span><h2 class="car-title-heading">مرسيدس-AMG <bdi dir="ltr">G 63</bdi></h2><div class="specs"><span>4.0L V8 MHEV<small>المحرك</small></span><span>4.4 ث<small>0–100 كم/س</small></span><span>577<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="سيارة فيراري صفراء رياضية" loading="lazy" decoding="async"><span class="car-tag">سيارة رياضية</span><button class="favorite" type="button" aria-label="إضافة فيراري للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">06 / 18</span><h2 class="car-title-heading">فيراري</h2><p class="model-verification-note">الطراز والمواصفات التفصيلية قيد التأكيد.</p><a class="car-test-drive" href="contact.html">استفسر عن السيارة ↗</a></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="بورشه كايين S" loading="lazy" decoding="async"><span class="car-tag">SUV رياضية</span><button class="favorite" type="button" aria-label="إضافة بورشه كايين S للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">07 / 18</span><h2 class="car-title-heading">بورشه كايين <bdi dir="ltr">S</bdi></h2><div class="specs"><span>4.0L V8<small>المحرك</small></span><span>4.7 ث<small>0–100 كم/س</small></span><span>468<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="لكزس LX 600" loading="lazy" decoding="async"><span class="car-tag">فخامة للطرق الوعرة</span><button class="favorite" type="button" aria-label="إضافة لكزس LX 600 للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">08 / 18</span><h2 class="car-title-heading">لكزس <bdi dir="ltr">LX 600</bdi></h2><div class="specs"><span>3.4L V6 TT<small>المحرك</small></span><span>6.9 ث<small>0–100 كم/س</small></span><span>409<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="أودي RS e-tron GT performance" loading="lazy" decoding="async"><span class="car-tag">أداء كهربائي</span><button class="favorite" type="button" aria-label="إضافة أودي RS e-tron GT performance للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">09 / 18</span><h2 class="car-title-heading">أودي <bdi dir="ltr">RS e-tron GT performance</bdi></h2><div class="specs"><span>كهربائي AWD<small>المنظومة</small></span><span>2.5 ث<small>0–100 كم/س</small></span><span>912<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="فيراري 296 GTB" loading="lazy" decoding="async"><span class="car-tag">سوبركار هجينة</span><button class="favorite" type="button" aria-label="إضافة فيراري 296 GTB للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">10 / 18</span><h2 class="car-title-heading">فيراري <bdi dir="ltr">296 GTB</bdi></h2><div class="specs"><span>3.0L V6 PHEV<small>المحرك</small></span><span>2.9 ث<small>0–100 كم/س</small></span><span>819<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="لامبورغيني أوروس SE" loading="lazy" decoding="async"><span class="car-tag">SUV عالية الأداء</span><button class="favorite" type="button" aria-label="إضافة لامبورغيني أوروس SE للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">11 / 18</span><h2 class="car-title-heading">لامبورغيني <bdi dir="ltr">Urus SE</bdi></h2><div class="specs"><span>4.0L V8 PHEV<small>المحرك</small></span><span>3.4 ث<small>0–100 كم/س</small></span><span>789<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="بنتلي كونتيننتال GT سبيد" loading="lazy" decoding="async"><span class="car-tag">جراند تورر فاخرة</span><button class="favorite" type="button" aria-label="إضافة بنتلي كونتيننتال GT سبيد للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">12 / 18</span><h2 class="car-title-heading">بنتلي <bdi dir="ltr">Continental GT Speed</bdi></h2><div class="specs"><span>4.0L V8 PHEV<small>المحرك</small></span><span>3.2 ث<small>0–100 كم/س</small></span><span>771<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="نيسان باترول" loading="lazy" decoding="async"><span class="car-tag">SUV عائلية</span><button class="favorite" type="button" aria-label="إضافة نيسان باترول للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">13 / 18</span><h2 class="car-title-heading">نيسان <bdi dir="ltr">Patrol LE</bdi></h2><div class="specs"><span>3.5L V6 TT<small>المحرك</small></span><span>700 Nm<small>العزم</small></span><span>425<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="تويوتا لاند كروزر" loading="lazy" decoding="async"><span class="car-tag">دفع رباعي</span><button class="favorite" type="button" aria-label="إضافة تويوتا لاند كروزر للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">14 / 18</span><h2 class="car-title-heading">تويوتا <bdi dir="ltr">Land Cruiser 300</bdi></h2><div class="specs"><span>3.5L V6 TT<small>المحرك</small></span><span>650 Nm<small>العزم</small></span><span>409<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="سيارة فورد موستانج رياضية" loading="lazy" decoding="async"><span class="car-tag">كوبيه رياضية</span><button class="favorite" type="button" aria-label="إضافة فورد موستانج للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">15 / 18</span><h2 class="car-title-heading">فورد <bdi dir="ltr">Mustang</bdi></h2><p class="model-verification-note">الطراز والمواصفات التفصيلية قيد التأكيد.</p><a class="car-test-drive" href="contact.html">استفسر عن السيارة ↗</a></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="GMC HUMMER EV Pickup 3X" loading="lazy" decoding="async"><span class="car-tag">بيك أب كهربائية</span><button class="favorite" type="button" aria-label="إضافة GMC HUMMER EV Pickup 3X للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">16 / 18</span><h2 class="car-title-heading">جي إم سي <bdi dir="ltr">HUMMER EV Pickup 3X</bdi></h2><div class="specs"><span>3 محركات<small>المنظومة</small></span><span>3.5 ث<small>0–100 كم/س</small></span><span>1,000<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="نيسان نافارا" loading="lazy" decoding="async"><span class="car-tag">دبل كابينة · 4×4</span><button class="favorite" type="button" aria-label="إضافة نيسان نافارا للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">17 / 18</span><h2 class="car-title-heading">نيسان <bdi dir="ltr">Navara Double Cab</bdi></h2><div class="specs"><span>2.3L Twin-Turbo Diesel<small>المحرك</small></span><span>450 Nm<small>العزم</small></span><span>190<small>حصان</small></span></div></div></article>
+        <article class="car-card"><div class="car-image"><img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85&amp;sat=-35" alt="تويوتا هايلكس" loading="lazy" decoding="async"><span class="car-tag">دبل كابينة · 4×4</span><button class="favorite" type="button" aria-label="إضافة تويوتا هايلكس للمفضلة" aria-pressed="false">♡</button></div><div class="car-info"><span class="model-index">18 / 18</span><h2 class="car-title-heading">تويوتا <bdi dir="ltr">Hilux Double Cab</bdi></h2><div class="specs"><span>2.8L Turbo Diesel<small>المحرك</small></span><span>500 Nm<small>العزم</small></span><span>204<small>حصان</small></span></div></div></article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>لا توجد سيارات تطابق بحثك. جرّب تغيير كلمات البحث أو مسح التصفية.</p>
+      <p class="spec-note">الموديلات والمواصفات المعروضة للتعريف فقط؛ قد تختلف حسب سنة الصنع والفئة والسوق المحلي.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="brand" href="index.html"><span class="brand-mark">E</span><span><b>إيلان</b><small>عالم السيارات الفاخرة</small></span></a>
+    <p>© <span id="current-year">2025</span> إيلان. كل الحقوق محفوظة.</p>
+    <a href="../../index.html">العودة إلى معرض المشاريع ↗</a>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+  <script src="collection.js"></script>
+</body>
+</html>
